@@ -14,17 +14,15 @@
     <div class="container">
       <br>
       <div class="d-flex justify-content-center align-items-center text-center">
-        <h1><b>TSELM: Target Speaker Extraction using Discrete Tokens and
-            Language
-            Models</b></h1>
+        <h1><b>LauraGPT WavLM TSE</b></h1>
       </div>
       <div class="d-flex justify-content-center align-items-center text-center">
-        Beilong Tang, Bang Zeng, Ming Li
+        Beilong Tang
       </div>
       <br>
       <!-- Paper and Code line -->
       <div class="d-flex justify-content-center align-items-center text-center">
-        <div>
+        <!-- <div>
           <a href="https://arxiv.org/abs/2409.07841" class="no-link-style me-3">
             <button type="button" class="btn btn-dark pr-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -37,9 +35,10 @@
               Paper
             </button>
           </a>
-        </div>
+        </div> -->
         <div>
-          <a href="https://github.com/Beilong-Tang/TSELM" class="no-link-style">
+          <a href="https://github.com/Beilong-Tang/lauragpt_wavlm_tse"
+            class="no-link-style">
             <button type="button" class="btn btn-dark">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-github"
@@ -57,18 +56,8 @@
       <div class="markdown-body">
         <h2>Overview</h2>
         <p style="text-align: justify;">
-          We propose TSELM, a novel target speaker extraction network that
-          leverages discrete tokens and language models.
-          TSELM utilizes multiple discretized layers from WavLM as input
-          tokens and incorporates cross-attention mechanisms to integrate
-          target speaker information. Language models are employed to
-          capture the sequence dependencies, while a scalable HiFi-GAN
-          is used to reconstruct the audio from the tokens. By applying a
-          cross-entropy loss, TSELM models the probability distribution of
-          output tokens, thus converting the complex regression problem of
-          audio generation into a classification task. Experimental results
-          show that TSELM achieves excellent results in speech quality
-          and comparable results in speech intelligibility.
+          Note that this is an ongoing project that explores the usage of LLMs
+          on TSE tasks.
           <div style="width: 100%" class="text-center">
             <img src="assets/model.svg" style="width: 80%;">
             <p>Overview of our model</p>
