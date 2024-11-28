@@ -55,12 +55,12 @@
       <div class="markdown-body">
         <h2>Overview</h2>
         <p style="text-align: justify;">
-          Note that this is an ongoing project that explores the usage of
+          Note that this is an <b>ongoing</b> project that explores the usage of
           Decoder-only LLMs
           (LauraGPT)
           and SSL (WavLM) on Target Speaker Extraction (TSE) and Speech
           Enhancement (SE) tasks.
-          <br>
+          <br><br>
           The current problem is the misaligned speaker similary when converting
           output
           wavlm discsrete embeddings to waveform, and we are trying discrete
@@ -78,6 +78,18 @@
           lists of reference speech and mixture speech. We take the mixture
           output and feed it to Vocoder to output clean speech. For SE, the
           input is noisy and the output is clean speech.
+        </p>
+
+        <h2>Model Details</h2>
+        <p style="text-align: justify;">
+          <li>This model has around 50M parameters with 6 layers of Transformers
+            using <a
+              href="https://github.com/modelscope/FunCodec">LauraGPT</a>.</li>
+          <li>For TSE task, the mixture is first concatenated with the reference
+            before passing the WavLM. Is uses the WavLM's capabilites in
+            identifying the primary speakers.</li>
+          <li>The current vocoder is a Conformer + HifiGan.</li>
+          <li>Models are trained on 30 epochs of Libri2Mix.</li>
         </p>
       </div>
       <div class="markdown-body">
