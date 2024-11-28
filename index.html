@@ -4,8 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TSELM: Target Speaker Extraction using Discrete Tokens and Language
-      Models</title>
+    <title>Laura WavLM TSE</title>
     <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
@@ -57,11 +56,23 @@
         <h2>Overview</h2>
         <p style="text-align: justify;">
           Note that this is an ongoing project that explores the usage of LLMs
-          on TSE tasks.
-          <div style="width: 100%" class="text-center">
-            <img src="assets/model.svg" style="width: 80%;">
-            <p>Overview of our model</p>
-          </div>
+          (LauraGPT)
+          and SSL (WavLM) on Target Speaker Extraction (TSE) and Speech
+          Enhancement (SE) tasks.
+          <br>
+          The current problem is the misaligned speaker similary when converting
+          output
+          wavlm discsrete embeddings to waveform, and we are trying discrete
+          voice
+          conversion methods to solve it.
+        </p>
+        <h2>Architecture</h2>
+        <div style="width: 100%" class="text-center">
+          <img src="assets/laura_gpt_wavlm.svg" style="width: 60%;">
+          <p>Fig 1. Model Overview for TSE</p>
+        </div>
+        <p style="text-align: justify;">
+          Fig 1. shows the model architecture for
         </p>
       </div>
       <div class="markdown-body">
