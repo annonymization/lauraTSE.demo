@@ -55,7 +55,8 @@
       <div class="markdown-body">
         <h2>Overview</h2>
         <p style="text-align: justify;">
-          Note that this is an ongoing project that explores the usage of LLMs
+          Note that this is an ongoing project that explores the usage of
+          Decoder-only LLMs
           (LauraGPT)
           and SSL (WavLM) on Target Speaker Extraction (TSE) and Speech
           Enhancement (SE) tasks.
@@ -72,7 +73,11 @@
           <p>Fig 1. Model Overview for TSE</p>
         </div>
         <p style="text-align: justify;">
-          Fig 1. shows the model architecture for
+          Fig 1. shows the our model architecture for TSE task where the input
+          is reference speech and mixture speech, and the output is the token
+          lists of reference speech and mixture speech. We take the mixture
+          output and feed it to Vocoder to output clean speech. For SE, the
+          input is noisy and the output is clean speech.
         </p>
       </div>
       <div class="markdown-body">
