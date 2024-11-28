@@ -9,7 +9,15 @@ const audioSources = [
     'reference.wav',
 ];
 
-function addRows(name, order) {
+const tse_sources = [
+    'mixture.wav',
+    'target.wav',
+    'output.wav',
+    'reference.wav',
+];
+
+
+function addRows(name, order, audioSources) {
     const tableBody = document.querySelector(`#${name} tbody`);
 
     const audio_path = `assets/demo/${name}`
@@ -40,8 +48,8 @@ function addRows(name, order) {
 
 const libri2mix = "libri2mix-audio-table"
 var order = [1, 2, 3, 4, 5, 6, 7]
-addRows(libri2mix, order);
+addRows(libri2mix, order, audioSources);
 
-const wsj0_2mix = "wsj0-2mix"
-order = [1, 2, 3, 4, 5, 6, 7]
-addRows(wsj0_2mix, order);
+const tse = "libri2mix_mix_clean"
+order = [1]
+addRows(tse, order, tse_sources);
