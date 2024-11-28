@@ -6,6 +6,16 @@
     height: 100%;           /* Optional: To fill the button */
 }
 
+.markdown-body h3 {
+    padding-bottom: 0.3em;
+    font-size: 1.3em;
+    border-bottom: 2px solid #c4c6c9;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
 .markdown-body h2 {
     padding-bottom: 0.3em;
     font-size: 1.5em;
