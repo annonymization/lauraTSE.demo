@@ -51,5 +51,5 @@ var order = [1, 2, 3, 4, 5, 6, 7]
 addRows(libri2mix, order, audioSources);
 
 const tse = "libri2mix_mix_clean"
-order = [1]
+order = [1, 2, 3, 4]
 addRows(tse, order, tse_sources);
