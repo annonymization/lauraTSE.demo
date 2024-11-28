@@ -1,12 +1,8 @@
 // Function to add rows to the table
-const audioSources = [
+const se_sources = [
     'mixture.wav',
-    'target.wav',
-    'spex_plus.wav',
-    'tselm_l.wav',
-    'tselm_l_hybrid.wav',
-    'continuous_wavlm_l6.wav',
-    'reference.wav',
+    'clean.wav',
+    'output.wav'
 ];
 
 const tse_sources = [
@@ -46,9 +42,9 @@ function addRows(name, order, audioSources) {
     }
 }
 
-const libri2mix = "libri2mix-audio-table"
-var order = [1, 2, 3, 4, 5, 6, 7]
-addRows(libri2mix, order, audioSources);
+const libri2mix = "libri2mix_mix_noise"
+var order = [1, 2, 3, 4]
+addRows(libri2mix, order, se_sources);
 
 const tse = "libri2mix_mix_clean"
 order = [1, 2, 3, 4]
