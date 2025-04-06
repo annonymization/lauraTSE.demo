@@ -42,9 +42,9 @@ function addRows(name, order, audioSources) {
     }
 }
 
-const libri2mix = "libri2mix_mix_noise"
-var order = [1, 2, 3, 4]
-addRows(libri2mix, order, se_sources);
+// const libri2mix = "libri2mix_mix_noise"
+// var order = [1, 2, 3, 4]
+// addRows(libri2mix, order, se_sources);
 
 const tse = "libri2mix_mix_clean"
 order = [1, 2, 3, 4]
