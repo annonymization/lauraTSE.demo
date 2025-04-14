@@ -13,11 +13,11 @@ const tse_sources = [
 
 const tse_compare_sources = [
     'mixture.wav',
-    'target.wav',
+    // 'target.wav',
     'laura_tse.wav',
     'tselm_l.wav',
     'spex_plus.wav',
-    'reference.wav',
+    // 'reference.wav',
 ];
 
 
