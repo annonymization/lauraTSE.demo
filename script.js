@@ -8,7 +8,7 @@
 const tse_sources = [
     'mixture.wav',
     'target.wav',
-    'output.wav',
+    'laura_tse.wav',
     'tselm_l.wav',
     'spex_plus.wav',
     'reference.wav',
