@@ -18,6 +18,8 @@ const tse_compare_sources = [
     'tselm_l.wav',
     'spex_plus.wav',
     // 'reference.wav',
+    'target.wav',
+    'reference.wav',
 ];
 
 
@@ -55,5 +57,5 @@ var order = [1, 2, 3, 4]
 addRows(libri2mix, order, tse_sources);
 
 const tse = "libri2mix_mix_clean_compare"
-order = [1, 2, 3, 4, 5, 6]
+order = [1, 2, 3, 6]
 addRows(tse, order, tse_compare_sources);
