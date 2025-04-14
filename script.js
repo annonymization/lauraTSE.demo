@@ -4,8 +4,14 @@
 //     'clean.wav',
 //     'output.wav'
 // ];
-
 const tse_sources = [
+    'mixture.wav',
+    'target.wav',
+    'output.wav',
+    'reference.wav',
+];
+
+const tse_compare_sources = [
     'mixture.wav',
     'target.wav',
     'laura_tse.wav',
@@ -44,10 +50,10 @@ function addRows(name, order, audioSources) {
     }
 }
 
-// const libri2mix = "libri2mix_mix_noise"
-// var order = [1, 2, 3, 4]
-// addRows(libri2mix, order, se_sources);
+const libri2mix = "libri2mix_mix_clean"
+var order = [1, 2, 3, 4]
+addRows(libri2mix, order, tse_sources);
 
-const tse = "libri2mix_mix_clean"
+const tse = "libri2mix_mix_clean_compare"
 order = [1, 2, 3, 4, 5, 6]
-addRows(tse, order, tse_sources);
+addRows(tse, order, tse_compare_sources);
