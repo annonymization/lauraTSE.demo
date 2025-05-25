@@ -53,7 +53,7 @@ function addRows(name, order, audioSources) {
 }
 
 const libri2mix = "libri2mix_mix_clean"
-var order = [1, 2, 3, 4]
+var order = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 addRows(libri2mix, order, tse_sources);
 
 const tse = "libri2mix_mix_clean_compare"
