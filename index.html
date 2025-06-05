@@ -57,12 +57,13 @@
       <div class="markdown-body">
         <h2>Abstract</h2>
         <p style="text-align: justify;">
-          We propose LauraTSE, an Auto-Regressive Decoder-Only Language Model for Target Speaker Extraction (TSE) based on the LauraGPT backbone. 
-          It employs a small-scale auto-regressive decoder-only language model which takes the continuous representations of both the mixture and 
-          the reference speech and produces the first few layers of the target speech's discrete codec representations. In addition, a one-step 
-          encoder-only language model reconstructs the sum of the predicted codec embeddings using both the mixture and the target speaker's 
-          reference information. Our approach achieves superior or comparable performance to existing discriminative TSE models. 
-          Moreover, we also study the data scalability and the role of the one-step encoder-only language model in the ablation studies.
+          We propose LauraTSE, an Auto-Regressive Decoder-Only Language Model for Target Speaker Extraction built upon the LauraGPT backbone.
+          LauraTSE employs a  small-scale auto-regressive decoder-only model that generates the initial layers of the 
+          target speech's discrete codec representations from the continuous embeddings of both the mixture and reference speech. 
+          These outputs serve as coarse-grained predictions. To refine them, a one-step encoder-only language model reconstructs the 
+          full codec representation by integrating information from both the mixture and the reference speech, adding fine-grained details. 
+          Our approach achieves superior or comparable performance to existing discriminative TSE models. Additionally, we conduct ablation 
+          studies to investigate the data scalability and the contribution of the encoder-only model.
         </p>
         <h2>Architecture</h2>
         <div style="width: 100%" class="text-center">
